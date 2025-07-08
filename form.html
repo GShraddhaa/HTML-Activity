@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD>
+    	<TITLE>Form</TITLE>
+		<LINK href="styles.css" rel="stylesheet" type="text/css">
+	</HEAD>
+	<BODY >
+		<DIV class="overlay" style="position: absolute;"></DIV>
+    
+    	<DIV style="display: block; position: relative; z-index: 1; vertical-align: middle; padding: 30px; background: rgba(255, 255, 255, 0.9); border-radius: 15px; width: 90%; max-width: 400px; margin: auto; margin-top: auto; font-family: 'Georgia', serif;">
+        	<H1 style="margin-bottom: 15px;">Form</H1>
+        
+        	<FORM action="https://student.cs.uwaterloo.ca/~cs200/cgi-bin/Responder.cgi" method="POST">
+        		<LABLE>Full Name:</LABEL><BR><BR>
+        		<INPUT type="hidden" name="identity" value="Full Name" required style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc;">
+        		
+        		<LABLE>Username:</LABEL><BR>
+        		<INPUT type="text" name="identity" required style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc;">
+        	
+            	<LABLE>Registration Number:</LABEL><BR>
+            	<INPUT type="text" name="idNumber" required style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc;"><BR>
+
+            	<LABLE>Comments:</LABEL><BR>
+            	<TEXTAREA name="comments" rows="4" required style="width: 100%; padding: 8px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc;"></TEXTAREA><BR>
+
+            	<LABLE>Lab:</LABLE><BR>
+            	<INPUT type="radio" name="lab" value="Lab101"> 830 TT
+            	<INPUT type="radio" name="lab" value="Lab102"> 1030 TT
+            	<INPUT type="radio" name="lab" value="Lab103"> 1430 WF<BR><BR><BR>
+            
+            	<LABLE>Application:</LABLE><BR>
+            	<SELECT name="app" required style="width: 100%; padding: 20px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc;">
+                	<OPTION value="Word">Word</OPTION>
+                	<OPTION value="Excel">Excel</OPTION>
+                	<OPTION value="HTML">HTML</OPTION>
+                	<OPTION value="Pixel Graphics">Pixel Graphics</OPTION>
+                	<OPTION value="Social Media">Social Media</OPTION>
+                	<OPTION value="FileMaker">FileMaker</OPTION>
+            	</SELECT><BR>
+
+            	<LABLE>Operating Systems:</LABLE><BR>
+            	<INPUT type="checkbox" name="mac" value="Yes"> Macintosh
+            	<INPUT type="checkbox" name="win" value="Yes"> Windows
+            	<INPUT type="checkbox" name="unix" value="Yes"> Linux<BR>
+
+            	<INPUT type="submit" value="Submit" style="width: 100%; padding: 10px; border: none; border-radius: 5px; background: black; color: white; cursor: pointer; margin-top: 20px;">
+        	</FORM>
+    	</DIV>
+	</BODY>
+</HTML>
